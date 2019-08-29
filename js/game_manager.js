@@ -141,7 +141,7 @@ GameManager.prototype.fillLegend = function () {
     grid.classList.add('legend-grid');
     cell.classList.add('legend-cell');
     cell.classList.add('cell-' + exp);
-    img.src = "style/img/" + exp + ".jpg";
+    img.src = localStorage.getItem('pack'); + exp + ".jpg";
     cell.appendChild(img);
     grid.appendChild(cell);
     row.appendChild(grid);
