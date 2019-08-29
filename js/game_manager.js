@@ -31,7 +31,6 @@ function caption(exp) {
   caption[512]  = '512';
   caption[1024] = '1024';
   caption[2048] = '2048';
-  caption[4096] = '4096';
 
   return caption[exp];
 }
