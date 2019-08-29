@@ -20,17 +20,18 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 // Set Captions
 function caption(exp) {
   var caption = [];
-  caption[2]    = 'grey';
-  caption[4]    = 'turquoise';
-  caption[8]    = 'brown';
-  caption[16]   = 'magenta';
-  caption[32]   = 'yellow';
-  caption[64]   = 'cyan';
-  caption[128]  = 'green';
-  caption[256]  = 'orange';
-  caption[512]  = 'lime';
-  caption[1024] = 'navy';
-  caption[2048] = 'pinky';
+  caption[2]    = '2';
+  caption[4]    = '4';
+  caption[8]    = '8';
+  caption[16]   = '16';
+  caption[32]   = '32';
+  caption[64]   = '64';
+  caption[128]  = '128';
+  caption[256]  = '256';
+  caption[512]  = '512';
+  caption[1024] = '1024';
+  caption[2048] = '2048';
+  caption[4096] = '4096';
 
   return caption[exp];
 }
