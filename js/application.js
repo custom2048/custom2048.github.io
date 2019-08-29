@@ -6,3 +6,7 @@ window.requestAnimationFrame(function () {
 function handle_undo() {
   game_manager.move(-1);
 }
+
+function setpack() {
+localStorage.setItem("pack", var pack = document.getElementById("pack") );
+}
