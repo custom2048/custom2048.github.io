@@ -8,6 +8,5 @@ function handle_undo() {
 }
 
 function setpack() {
-var input = document.getElementById('saveServer').value;
-localStorage.setItem('server', input);
+document.getElementById("pack").value;
 }
