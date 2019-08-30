@@ -8,5 +8,5 @@ function handle_undo() {
 }
 
 function setpack() {
-document.getElementById("pack").value;
+storage.setItem(pack, document.getElementById("pack").value);
 }
