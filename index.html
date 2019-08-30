@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8">
 	<style> 
-input[type=button] {
-  width: 30%;
-  background-color: #ccc;
+		
+.button {
+  background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 20px;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 4px;
+  width: 60%;
 }
 input[type=text] {
   width: 60%;
@@ -117,7 +122,7 @@ input[type=text] {
       </div>
     </div>
 <br>
-  <input type="text" id="pack" name="Pack" placeholder="2048 Pack URL">
+  <input type="text" id="pack" name="Pack" placeholder="2048 Pack URL"><button onclick="setpack()">Submit</button>
 	  
     <p class="game-explanation">
       <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two of the same tiles touch, you get <strong>the next!</strong><br>
