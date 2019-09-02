@@ -44,12 +44,12 @@ input[type=text] {
 function load() {
   if (localStorage.getItem("pack") === null) {
   localStorage.setItem('pack', 'https://custom2048.github.io/style/img/');
+	  location.reload();
 }
 }
 </script>
 	</head>
-<body>
-	<load onload="load()"></load>
+<body onload="load()">
   <div class="container">
     <div class="heading">
       <div class="title-container">
