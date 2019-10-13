@@ -1,165 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html><head>
+<title>
+  2048 Chrome Extension
+</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/2048cupcake/2048cupcake.github.io/master/favicon.ico">
+<style>
+body {
+  background-color: pink;
+}
+</style>
+</head>
+<body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141178890-6"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-141178890-4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-141178890-6');
+  gtag('config', 'UA-141178890-4');
 </script>
 
-  <meta charset="utf-8">
-	<style> 
-		
-button {
-  width: 40%;
-  box-sizing: border-box;
-  border: 2px solid #8f7a66;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: #8f7a66;
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 20px;
-  color: white;
-}
-input[type=text] {
-  width: 60%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 20px;
-}
-</style>
-  <title>2048 CUSTOM</title>
+<center>
+<iframe style="border:none;" src="https://2048cupcake.github.io/page.html" height="1800" width="1000"></iframe>
+</center>
 
-  <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="format-detection" content="telephone=no" />
-	<script>
-function load() {
-  if (localStorage.getItem("pack") === null) {
-  localStorage.setItem('pack', 'https://custom2048.github.io/style/img/');
-	  location.reload();
-}
-}
-</script>
-	</head>
-<body onload="load()">
-  <div class="container">
-    <div class="heading">
-      <div class="title-container">
-        <h1 class="title">2048 <small>CUSTOM</small></h1>
-      </div>
-       <div class="scores-container">
-        <div class="score-container">
-          <p>
-            <span class="caption">Score</span><br>
-            <span class="score-points">0</span>
-          </p>
-        </div>
-        <div class="best-container">
-          <p>
-            <span class="caption">Best Score</span><br>
-            <span class="best-points">0</span>
-          </p>
-        </div>
-        <div class="score-container">
-          <p style="display: none;">
-            <span class="caption">Level</span><br>
-            <span class="score-level"></span>
-          </p>
-        </div>
-        <div class="best-container">
-          <p style="display: none;">
-            <span class="caption">Best Level</span><br>
-            <span class="best-level"></span>
-          </p>
-        </div>
-      </div>
-    </div>
-      <p class="game-intro">Join the <strong>Custom</strong> Blocks</p>
-      <a class="restart-button">New Game</a>
-<br>
-	  <br>
-    <div class="game-container">
-      <div class="game-message">
-        <p></p>
-        <div class="lower">
-	        <a class="keep-playing-button">Continue</a>
-          <a class="retry-button">Retry</a>
-          <div class="score-sharing"></div>
-        </div>
-      </div>
-
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-      </div>
-
-      <div class="tile-container">
-
-      </div>
-    </div>
-<br>
-  <input type="text" id="pack" name="Pack" placeholder="2048 Pack URL"><button onclick="setpack()"><strong>Submit</strong></button>
-	  
-<p class="game-explanation">
-      <strong class="important">What is Custom 2048: </strong>Create / Find a 2048 custom pack, and paste it in the box above.
-<p>
-    You can also find pre-made packs, and a<strong> How-To Create</strong> at <a href="https://custom2048.github.io/packs">custom2048.github.io/packs</a>.
-</p></p>
-    <hr>
-    <p class="tile-legend"><strong class="important">Tile Legend:</strong></p>
-    <hr>
-  </div>
-  <script src="js/seedrandom.js"></script>
-  <script src="js/bind_polyfill.js"></script>
-  <script src="js/classlist_polyfill.js"></script>
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_storage_manager.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/application.js"></script>
-</script>
-</body>
-</html>
+</body></html>
